@@ -1,0 +1,142 @@
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  background-color: hsl(225, 100%, 94%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: auto;
+  justify-content: flex-end;
+}
+
+h1 {
+   font-size: 1.6rem;
+    margin-top: 2rem;
+    color: hsl(223, 47%, 23%);
+}
+
+h2 {
+  font-size: 1.1rem;
+  color: hsl(223, 47%, 23%);
+}
+
+p {
+  color: hsl(224, 23%, 55%);
+  line-height: 1.6;
+}
+
+.card-container {
+  background-color: #FFF;
+  border-radius: 15px;
+  margin: 1rem;
+  padding-top: 5rem;
+  font-size: 0.9rem;
+  max-width: 360px;
+  box-shadow:  0 8px 30px -14px hsl(223, 47%, 23%);
+}
+
+.header {
+  text-align: center;
+  padding: 3rem 2.5rem 0;
+  position: relative;
+}
+
+.header::before {
+content: "";
+background: url("../images/illustration-hero.svg") center no-repeat;
+position: absolute;
+width: 100%;
+top: 0;
+transform: translate(-50%, -70%);
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+background-size: cover;
+padding-bottom: calc(100% * 3.5 / 7.2);
+}
+
+.choice {
+  background-color: hsl(225, 100%, 98%);
+  margin: 1.5rem;
+  padding: 0.4rem 1rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.plan {
+  display: flex;
+  align-items: center;
+}
+
+.plan::before {
+  content: url("../images/icon-music.svg");
+  max-width: 100%;
+}
+
+.text-plan {
+  font-size: 0.8rem;
+  margin: 0.5rem 1rem ;
+  line-height:0;
+}
+
+.price {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.change:hover {
+  color: hsla(245, 75%, 52%, 0.7);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.buttons {
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+
+.payment-button {
+  background-color: hsl(245, 75%, 52%);
+  color: #FFFFFF;
+  border-radius: 10px;
+  border-style: none;
+  box-shadow:  0 8px 30px -12px hsl(245, 75%, 52% );
+  font-family: 'Red Hat Display', sans-serif;
+  padding: 1rem 5rem;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.payment-button:hover {
+  background-color: hsla(245, 75%, 52%, 0.7);
+  transition-duration: .1s;
+}
+
+.cancel-button {
+  background: hsl(225deg 100% 100% / 0%);
+  color: hsl(224, 23%, 55%);
+  border-style: none;
+  font-family: 'Red Hat Display', sans-serif;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.cancel-button:hover {
+  color: hsl(223, 47%, 23%);
+  transition-duration: .1s;
+}
+
+.attribution {
+  font-size: 0.8rem;
+  text-align: center;
+  margin: 0 1rem 1rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
